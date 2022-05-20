@@ -1,17 +1,17 @@
 <html>
 <head>
-  <link type="text/css" rel="stylesheet" media="all" href="../dist/styles/h5p.css" />
+  
   <meta charset="utf-8" />
   
-  <script type="text/javascript" src="../dist/main.bundle.js"></script>
+  <script type="text/javascript" src="/dist/main.bundle.js"></script>
 
   <script type="text/javascript">
           
           const el = document.getElementById('h5p-container');
           const options = {
             h5pJsonPath:  '/h5p-folder',
-            frameJs: '../dist/frame.bundle.js',
-            frameCss: '../dist/styles/h5p.css',
+            frameJs: '/dist/frame.bundle.js',
+            frameCss: '/dist/styles/h5p.css',
           }
           new H5PStandalone.H5P(el, options);
 
