@@ -3,16 +3,26 @@
   <link type="text/css" rel="stylesheet" media="all" href="../dist/styles/h5p.css" />
   <meta charset="utf-8" />
   <script type="text/javascript" src="../dist/js/h5p-standalone-main.min.js"></script>
-  <script type="text/javascript" src="dist/js/main.bundle.js"></script>
+  <script type="text/javascript" src="../dist/js/main.bundle.js"></script>
 
   <script type="text/javascript">
     (function($) {
       $(function() {
         $('.h5p-container').h5p({
           
+          <!-- 
           frameJs: '../dist/js/h5p-standalone-frame.min.js',
           frameCss: '../dist/styles/h5p.css',
-          h5pContent: '../workspace/webdev-tutorial-1' <!-- Name of specific H5P content folder goes here -->
+          h5pContent: '../workspace/webdev-tutorial-1' 
+          -->
+          
+          const el = document.getElementById('h5p-container');
+          const options = {
+            h5pJsonPath:  '/h5p-folder',
+            frameJs: '../dist/js/frame.bundle.js',
+            frameCss: '../dist/js/styles/h5p.css',
+          }
+          new H5PStandalone.H5P(el, options);
           
         });
       });
