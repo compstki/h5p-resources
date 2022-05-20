@@ -6,9 +6,6 @@
   <script type="text/javascript" src="../dist/main.bundle.js"></script>
 
   <script type="text/javascript">
-    (function($) {
-      $(function() {
-        $('.h5p-container').h5p({
           
           const el = document.getElementById('h5p-container');
           const options = {
@@ -17,10 +14,7 @@
             frameCss: '../dist/styles/h5p.css',
           }
           new H5PStandalone.H5P(el, options);
-          
-        });
-      });
-    })(H5P.jQuery);
+
   </script>
 </head>
   <body>
